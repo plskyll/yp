@@ -26,4 +26,3 @@ print(f"Площа кола: {circle.area()}")
 
 rectangle = Rectangle(4, 6)
 print(f"Площа прямокутника: {rectangle.area()}")
-
