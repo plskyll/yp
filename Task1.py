@@ -1,8 +1,14 @@
+def fibonacci_seq_generator():
+    a = 0
+    b = 1
+
+    while True:
+        yield a
+        t = a
+        a = b
+        b = t + b
+
+generator = fibonacci_seq_generator()
+
 for i in range(1, 11):
-    print(i)
-
-for i in range(2, 21, 2):
-    print(i)
-
-for i in range(10, 0, -1):
-    print(i)
+    print(next(generator))
